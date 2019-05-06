@@ -1,0 +1,5 @@
+{
+    "runtime": "dotnet",            
+    "description": "C# Durable Functions scale test",       
+    "isScript": false
+}

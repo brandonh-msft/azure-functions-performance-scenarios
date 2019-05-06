@@ -14,9 +14,11 @@ namespace V2FunctionsLoadTest
 {
     public static class Runner
     {
-        [FunctionName(nameof(Start))]
-        public static async Task<IActionResult> Start(
-            [HttpTrigger(AuthorizationLevel.Function, methods: "post", Route = nameof(Start) + @"/{instances=600}/{parallelism=100}")] HttpRequest req,
+        [FunctionName(nameof(StartDFScaleTest))]
+        public static async Task<IActionResult> StartDFScaleTest(
+#pragma warning disable IDE0060 // Remove unused parameter
+            [HttpTrigger(AuthorizationLevel.Function, methods: "post", Route = nameof(StartDFScaleTest) + @"/{instances=600}/{parallelism=100}")] HttpRequest req,
+#pragma warning restore IDE0060 // Remove unused parameter
             [OrchestrationClient] DurableOrchestrationClientBase client,
             int instances, int parallelism,
             ILogger log)
@@ -82,7 +84,9 @@ namespace V2FunctionsLoadTest
 
         [FunctionName(nameof(GetStatus))]
         public static async Task<IActionResult> GetStatus(
+#pragma warning disable IDE0060 // Remove unused parameter
             [HttpTrigger(AuthorizationLevel.Function, methods: "get")] HttpRequest req,
+#pragma warning restore IDE0060 // Remove unused parameter
             [OrchestrationClient] DurableOrchestrationClientBase client,
             ILogger log)
         {

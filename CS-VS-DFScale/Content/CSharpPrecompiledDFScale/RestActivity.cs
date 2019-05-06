@@ -13,7 +13,7 @@ namespace V2FunctionsLoadTest
         private static readonly HttpClient Client = new HttpClient();
 
         [FunctionName("RestActivity")]
-        public static async Task<Dictionary<string, object>> Execute([ActivityTrigger] Dictionary<string, object> request, ILogger logger)
+        public static async Task<Dictionary<string, object>> Execute([ActivityTrigger] Dictionary<string, object> request)
         {
             HttpRequestMessage requestMessage = new HttpRequestMessage(new HttpMethod((string)request["RequestType"]), (string)request["Url"]);
 
