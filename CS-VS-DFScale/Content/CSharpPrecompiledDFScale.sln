@@ -1,9 +1,15 @@
 ﻿
 Microsoft Visual Studio Solution File, Format Version 12.00
-# Visual Studio 15
-VisualStudioVersion = 15.0.28307.329
+# Visual Studio Version 16
+VisualStudioVersion = 16.0.28803.352
 MinimumVisualStudioVersion = 10.0.40219.1
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "CSharpPrecompiledDFScale", "CSharpPrecompiledDFScale\CSharpPrecompiledDFScale.csproj", "{B5AB7008-D9B0-4445-A548-854E0214C2F0}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "CSharpPrecompiledDFScale", "CSharpPrecompiledDFScale\CSharpPrecompiledDFScale.csproj", "{B5AB7008-D9B0-4445-A548-854E0214C2F0}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Solution Items", "Solution Items", "{F674B989-1DF0-4004-8A6C-A137BD8CAD26}"
+	ProjectSection(SolutionItems) = preProject
+		..\config.json = ..\config.json
+		..\test.jmx = ..\test.jmx
+	EndProjectSection
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution

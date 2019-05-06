@@ -85,7 +85,7 @@ namespace V2FunctionsLoadTest
         [FunctionName(nameof(GetStatus))]
         public static async Task<IActionResult> GetStatus(
 #pragma warning disable IDE0060 // Remove unused parameter
-            [HttpTrigger(AuthorizationLevel.Function, methods: "get")] HttpRequest req,
+            [HttpTrigger(AuthorizationLevel.Anonymous, methods: "get")] HttpRequest req,
 #pragma warning restore IDE0060 // Remove unused parameter
             [OrchestrationClient] DurableOrchestrationClientBase client,
             ILogger log)
